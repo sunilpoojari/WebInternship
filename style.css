@@ -6,10 +6,10 @@
 
 nav{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     min-height: 8vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     background-color: #bae8e8;
     
@@ -19,6 +19,8 @@ nav{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 20px;
+    padding-right: 40% ;
+    padding-left: 5%;
 }
 .nav-links{
     display: flex;
@@ -84,7 +86,10 @@ overflow-x: hidden;
     }
     .burger{
         display: block;
+        padding-left: 5%;
+        padding-right: 25%;
     }
+    
 }
 
 .nav-active{
