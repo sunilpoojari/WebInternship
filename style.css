@@ -16,7 +16,8 @@ nav{
     background-color: #bae8e8;
     width: 100%;
 }
-.logo{
+.logo a{
+    text-decoration: none;
     color: rgb(10, 10, 10);
     text-transform: uppercase;
     letter-spacing: 3px;
