@@ -1,3 +1,4 @@
+
 /* navbar css */
 * {
   padding: 0px;
@@ -6,20 +7,15 @@
   width: 100%;
   overflow-x: hidden;
 }
-/* body{
-  background-color: rgb(202, 236, 202);
-} */
 
 :root {
-  --title-color:rgb(46, 182, 46);
+  --title-color: rgb(46, 182, 46);
 }
-
 
 p {
   font-size: 1.2rem;
   font-weight: 100;
   text-align: center;
-  
 }
 li {
   list-style-position: inside;
@@ -43,9 +39,8 @@ nav {
   min-height: 10vh;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  background-color:rgb(126, 196, 126);
+  background-color: rgb(157, 214, 157);
   width: 100%;
-  /* position: fixed; */
 }
 .logo {
   color: green;
@@ -70,10 +65,6 @@ nav {
   font-size: 14px;
 }
 
-#home {
-  padding: 5%;
-}
-
 .nav-links li {
   list-style: none;
 }
@@ -88,66 +79,52 @@ nav {
   margin: 5px;
   transition: all 0.3s ease;
 }
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 55%;
-  }
+#home {
+  padding: 5%;
+}
+/* Css for Realty Section */
+.realty-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.realty-logos {
+  width: 65px;
+  margin-left: 4em;
+}
+.realty-span {
+  margin-left: 0.4em;
+  margin-top: 0.3em;
+  font-size: 1.6rem;
+}
+.realty-partner {
+  display: flex;
+  width: calc(85% / 3);
+  margin-bottom: 2em;
+  margin-top: 1em;
+  align-content: center;
 }
 
-/* Only for Navbar */
-@media screen and (max-width: 786px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    color: var(--title-color);
-  }
-  p {
-    text-align: center;
-  }
-  .title {
-    color: var(--title-color);
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-align: center;
-    padding: 1%;
-  }
-  .nav-links {
-    position: absolute;
-    padding-bottom: 80%;
-    left: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: #bae8e8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-    padding-left: 5%;
-    width: 20%;
-  }
-  .logo {
-    padding-left: 18%;
-  }
+/* Css for Loan Section */
+.loan-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-.nav-active {
-  transform: translateX(0);
+.loan-logos {
+  width: 65px;
+  margin-left: 4em;
+}
+.loan-span {
+  margin-left: 0.4em;
+  margin-top: 0.3em;
+  font-size: 1.6rem;
+}
+.loan-partner {
+  display: flex;
+  width: calc(85% / 3);
+  margin-bottom: 0.3em;
+  margin-top: 0.3em;
 }
 
 @keyframes navLinkFade {
@@ -174,38 +151,24 @@ nav {
 }
 
 /* Section CSS */
-
 section {
   width: 100%;
   height: auto;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 5%;
 }
-#assist {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr 3fr 1fr;
-  grid-template-rows: 1fr;
-  row-gap: 1fr;
-  grid-template-areas: ". assist_left . assist_right .";
-}
 
+#assist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 #assist_left {
-  grid-area: assist_left;
-  padding-left: 10%;
+  flex-basis: 25%;
 }
 #assist_right {
-  height: auto;
-  grid-area: assist_right;
+  flex-basis: 40%;
 }
-
-/* @media screen and (max-width: 786px) {
-  section {
-    width: 100%;
-    height: auto;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.9rem;
-  }
-} */
 
 /* footer css */
 footer {
@@ -264,13 +227,130 @@ footer img {
   text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+  }
+}
+
 @media screen and (max-width: 786px) {
-  h1 {
-    font-size: 1.3rem;
+  /* Responsive CSS for nav-links */
+  .nav-links {
+    position: absolute;
+    padding-bottom: 80%;
+    left: 0px;
+    height: 92vh;
+    top: 9.9vh;
+    background-color: rgb(192, 247, 192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    padding-left: 5%;
+    width: 20%;
+  }
+  .logo {
+    padding-left: 18%;
+    font-size: 1.2rem;
     text-align: center;
   }
+
+  /* CSS for Text */
   * {
     font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--title-color);
+  }
+  p {
+    text-align: center;
+  }
+  .title {
+    color: var(--title-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1%;
+  }
+
+  /*Responsive Css for Loan Section */
+  .loan-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .loan-logos {
+    width: 35px;
+    height: 30px;
+    margin: 0;
+    margin-top: 0.2em;
+  }
+  .loan-span {
+    margin-left: 0.4em;
+    margin-top: 0.1em;
+    font-size: 1rem;
+  }
+  .loan-partner {
+    display: flex;
+    width: calc(85% / 2);
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    margin-left: .7em;
+  }
+
+  /*Responsive Css for Realty Section */
+  .realty-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .realty-logos {
+    width: 35px;
+    height: 30px;
+    margin: 0;
+    margin-top: 0.2em;
+  }
+  .realty-span {
+    margin-left: 0.4em;
+    margin-top: 0.1em;
+    font-size: 1rem;
+  }
+  .realty-partner {
+    display: flex;
+    width: calc(85% / 2);
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    margin-left: .7em;
+  }
+
+ 
+  /* CSS for assist Section */
+  #assist {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    margin-left: 1em;
+  }
+  #assist_left {
+    flex-basis: 45%;
+  }
+  #assist_right {
+    flex-basis: 55%;
   }
 
   /* footer css */
@@ -289,7 +369,6 @@ footer img {
       "location location"
       "copyright copyright";
   }
-
   footer img {
     width: 30px;
     height: 30px;
@@ -300,21 +379,18 @@ footer img {
     padding-bottom: 2%;
     padding-top: 4%;
   }
-
   #footermenu {
     grid-area: footermenu;
     padding-bottom: 2%;
     padding-top: 4%;
   }
-
   #contacts {
     grid-area: contacts;
     padding-bottom: 2%;
     padding-top: 4%;
-    font-size: smaller;
+    font-size: .8rem;
     font-weight: 100;
   }
-
   #location {
     grid-area: location;
     padding-bottom: 2%;
@@ -322,35 +398,18 @@ footer img {
     font-size: smaller;
     font-weight: 100;
   }
-
   #copyright {
     grid-area: copyright;
     padding-top: 4%;
     padding-bottom: 4%;
     font-size: smaller;
   }
-
   #footermenu p {
     font-size: small;
     padding: 5px;
     text-align: center;
   }
-
-  #assist {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 1fr;
-    grid-template-areas: "assist_left assist_right";
-  }
-  #assist #title {
-    grid-area: title;
-    font-size: 1.3rem;
-  }
-  #assist_left {
-    grid-area: assist_left;
-  }
-  #assist_right {
-    grid-area: assist_right;
-  }
+}
+.nav-active {
+  transform: translateX(0);
 }

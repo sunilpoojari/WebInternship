@@ -37,4 +37,14 @@ const navSlide = () =>{
     
 }
 
+document.querySelector("#container").addEventListener("click",()=>{
+    
+    if(document.querySelector(".burger").classList.length == 2){
+        document.querySelector(".nav-links").classList.toggle('nav-active');
+        document.querySelector(".burger").classList.toggle('toggle')
+    }
+    console.log(document.querySelector(".burger").classList.length,"hiii")
+
+})
+
 navSlide();
