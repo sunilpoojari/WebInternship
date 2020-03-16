@@ -52,8 +52,8 @@ function toggle_class(){
         })
     }
 }
-document.querySelector("#container").addEventListener('focus',toggle_class,true)
-// document.querySelector("#container").addEventListener('click',toggle_class,true)
+// document.querySelector("nav").addEventListener('blur',toggle_class,true)
+document.querySelector("#container").addEventListener('click',toggle_class,true)
 
     
 navSlide();
