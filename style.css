@@ -83,7 +83,7 @@ nav {
   background-color: black;
   margin: 5px;
   transition: all 0.3s ease;
-  overflow: hidden;
+  
 }
 #home {
   padding: 5%;
@@ -296,6 +296,14 @@ footer img {
     display: block;
     padding-left: 5%;
     width: 20%;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
   }
   .logo {
     padding-left: 18%;
