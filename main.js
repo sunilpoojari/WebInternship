@@ -53,7 +53,8 @@ function toggle_class(){
     }
 }
 // document.querySelector("nav").addEventListener('blur',toggle_class,true)
-document.querySelector("#container").addEventListener('click',toggle_class,true)
-
+// document.querySelector("#container").addEventListener('click',toggle_class,true)
+// document.querySelector("#container").addEventListener('scroll',toggle_class)
+window.onscroll = function() {this.toggle_class()};
     
 navSlide();
