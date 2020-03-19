@@ -52,7 +52,12 @@ footer {
 }
 
 .footer-contacts p a {
-  color: #5383d3;
+  color: rgb(154,254,54);
+  text-decoration: none;
+}
+
+.footer-contacts p span:hover a {
+  color: rgb(255,255,255);
   text-decoration: none;
 }
 
