@@ -28,7 +28,12 @@ footer {
 }
 
 .footer-navigation p.links a {
-  color: #fff;
+  color: rgb(154,254,54);
+  text-decoration: none;
+}
+
+.footer-navigation p.links:hover a {
+  color: rgb(255,255,255);
   text-decoration: none;
 }
 
