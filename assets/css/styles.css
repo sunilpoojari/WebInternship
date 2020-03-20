@@ -14,3 +14,7 @@
   font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: rgb(154,254,54);
+}
+
