@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+html,body {
+  overflow-x: hidden;
+} 
+
 :root {
   --title-color: rgb(46, 182, 46);
 }
